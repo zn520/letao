@@ -3,13 +3,13 @@ import App from "./App.vue";
 import router from "./router";
 import store from "./store";
 import axios from "axios";
-import Vant from "vant";
+import vant from "vant";
 import "../node_modules/vant/lib/index.css";
-import {Lazyload} from "vant";
+import FooterBar from "./components/FooterBar";
 
+Vue.component("footer-bar",FooterBar);
+Vue.use(vant);
 Vue.prototype.axios = axios;
-Vue.use(Vant);
-Vue.use(Lazyload);
 Vue.config.productionTip = false;
 
 new Vue({

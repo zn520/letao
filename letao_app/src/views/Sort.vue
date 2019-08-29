@@ -1,5 +1,5 @@
 <template>
-  
+  <footer-bar />
 </template>
 
 <script>
